@@ -1,0 +1,190 @@
+.packagesSection {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #FFF6E5 0%, #FFE4E1 100%);
+  min-height: 100vh;
+}
+
+.packagesHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subTitle {
+  font-size: 1.8rem;
+  color: #FF9933;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.packagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.packageCard {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.packageCard.popular {
+  border: 2px solid #FF9933;
+  transform: scale(1.05);
+}
+
+.packageCard:hover {
+  transform: translateY(-10px);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: linear-gradient(45deg, #FF6B6B, #FF9933);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.packageHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.packageIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+.packageName {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.packagePrice {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FF6B6B;
+  margin-bottom: 1rem;
+}
+
+.currency {
+  font-size: 1.5rem;
+  vertical-align: super;
+}
+
+.packageDescription {
+  color: #666;
+  line-height: 1.6;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  color: #555;
+}
+
+.featureIcon {
+  color: #FF9933;
+}
+
+.bookButton {
+  width: 100%;
+  background: linear-gradient(45deg, #FF6B6B, #FF9933);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.bookButton:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.buttonArrow {
+  transition: transform 0.3s ease;
+}
+
+.bookButton:hover .buttonArrow {
+  transform: translateX(5px);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .packagesSection {
+    padding: 4rem 1rem;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+
+  .packageCard.popular {
+    transform: none;
+  }
+
+  .packageCard {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

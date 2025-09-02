@@ -1,0 +1,183 @@
+.themesSection {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #FFF6E5 0%, #FFF0F5 100%);
+}
+
+.themesHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subTitle {
+  font-size: 1.8rem;
+  color: #FF9933;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.themesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.themeCard {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.themeCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.themeImageContainer {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.themeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.themeCard:hover .themeImage {
+  transform: scale(1.1);
+}
+
+.themeEmoji {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  animation: bounce 2s infinite;
+}
+
+.themeContent {
+  padding: 1.5rem;
+}
+
+.themeName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.themeDescription {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.themeFeatures {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.featureItem {
+  color: #555;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.themeFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FF6B6B;
+}
+
+.bookButton {
+  background: linear-gradient(45deg, #FF6B6B, #FF9933);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.bookButton:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.buttonArrow {
+  transition: transform 0.3s ease;
+}
+
+.bookButton:hover .buttonArrow {
+  transform: translateX(5px);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .themesSection {
+    padding: 4rem 1rem;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+  }
+
+  .themesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .themeCard {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
