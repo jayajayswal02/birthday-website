@@ -142,7 +142,7 @@ const ContactSection = () => {
 
             {submitted && (
               <div className={styles.successMessage}>
-                Thanks! We'll be in touch soon! 🎉
+                Thanks! We&apos;ll be in touch soon! 🎉
               </div>
             )}
           </form>
