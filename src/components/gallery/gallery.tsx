@@ -2,6 +2,10 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import styles from './gallery.module.css';
+import galleryImage1 from '../../assets/gallery/gallery1.jpg';
+import galleryImage2 from '../../assets/gallery/gallery2.webp';
+import galleryImage3 from '../../assets/gallery/gallery3.jpg';
+import galleryImage4 from '../../assets/gallery/gallery4.jpg';
 
 interface GalleryImage {
   id: number;
@@ -13,25 +17,25 @@ interface GalleryImage {
 const galleryImages: GalleryImage[] = [
   {
     id: 1,
-    src: "/gallery/safari-party1.jpg",
+    src: galleryImage1.src,
     title: "Jungle Safari Celebration",
     category: "Safari Parties"
   },
   {
     id: 2,
-    src: "/gallery/royal-celebration1.jpg",
+    src: galleryImage2.src,
     title: "Royal Indian Safari",
     category: "Royal Themes"
   },
   {
     id: 3,
-    src: "/gallery/magical-forest1.jpg",
+    src: galleryImage3.src,
     title: "Enchanted Forest Party",
     category: "Magical Themes"
   },
   {
     id: 4,
-    src: "/gallery/desert-carnival1.jpg",
+    src: galleryImage4.src,
     title: "Desert Safari Adventure",
     category: "Desert Themes"
   },

@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './hero.module.css';
+import heroImage from '../../assets/hero/hero1.jpg';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -48,10 +49,10 @@ const Hero = () => {
         <div className={styles.visualSection}>
           <div className={styles.mainImage}>
             <Image
-              src="/safari-birthday.png"
+              src={heroImage}
               alt="Safari Birthday Celebration"
-              width={600}
-              height={600}
+              width={500}
+              height={500}
               priority
               className={styles.heroImage}
             />
