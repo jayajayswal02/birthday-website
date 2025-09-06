@@ -18,7 +18,7 @@ const Hero = () => {
           <h1 className={styles.title}>
             <span className={styles.mainTitle}>Magical Birthday</span>
             <span className={styles.subTitle}>Safari Animals</span>
-            <span className={styles.indianText}>जादुई जन्मदिन सफारी</span>
+            <span className={styles.indianText}>Happy Birthday Babu❤</span>
           </h1>
           
           <p className={styles.description}>
